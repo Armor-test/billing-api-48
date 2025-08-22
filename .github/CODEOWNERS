@@ -1,0 +1,35 @@
+# CODEOWNERS file for billing-api-48
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-devops @Armor-test/team-logging @Armor-test/team-auth
+
+# Directory ownership
+/core/ @Armor-test/grp-sre @Armor-test/grp-reporting @Armor-test/dept-billing
+/ui/ @Armor-test/team-product @Armor-test/squad-search @Armor-test/team-core
+/tests/ @Armor-test/dept-data @Armor-test/team-architecture @Armor-test/team-logging
+/deploy/ @Armor-test/team-research @Armor-test/unit-storage
+/build/ @Armor-test/team-architecture @Armor-test/squad-network @Armor-test/grp-reliability
+/test/ @Armor-test/grp-reliability @Armor-test/grp-product
+/views/ @Armor-test/squad-notifications @Armor-test/team-product
+/middleware/ @Armor-test/team-product @Armor-test/dept-payments @Armor-test/dept-network
+/spec/ @Armor-test/dept-search @Armor-test/squad-notifications
+/hooks/ @Armor-test/unit-mobile @Armor-test/dept-billing
+
+# File type ownership
+*.php @Armor-test/dept-payments @Armor-test/unit-logging
+*.yaml @Armor-test/grp-sre @Armor-test/team-logging @Armor-test/unit-storage
+*.java @Armor-test/unit-search @Armor-test/team-metrics
+*.graphql @Armor-test/dept-reliability @Armor-test/team-ux
+*.toml @Armor-test/dept-ui @Armor-test/dept-frontend @Armor-test/grp-reliability
+*.swift @Armor-test/squad-network @Armor-test/team-metrics
+*.go @Armor-test/dept-billing @Armor-test/dept-database
+*.cpp @Armor-test/dept-payments @Armor-test/grp-product
+*.xml @Armor-test/grp-ui @Armor-test/dept-data @Armor-test/unit-mobile
+*.py @Armor-test/team-metrics @Armor-test/dept-reliability @Armor-test/dept-ui
+*.config @Armor-test/squad-ui @Armor-test/team-auth
+*.proto @Armor-test/team-metrics @Armor-test/dept-ui
+*.gradle @Armor-test/unit-mobile @Armor-test/dept-messaging
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
